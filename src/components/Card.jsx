@@ -2,11 +2,10 @@ import React, { useRef } from 'react';
 import './styling/card.css';
 
 const Card = ({ name, homeCard, even, count }) => {
-  console.log(count);
   name = name.toLowerCase();
   if (name === 'americas') name = 'america';
   if (name === 'antarctic') name = 'antarctica';
-  const map = useRef('');
+  const map = useRef();
   const getMap = async () => {
     const response = await fetch(
       `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${name}/vector.svg`

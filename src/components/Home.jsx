@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Card from './Card';
-import Header from './Header';
+import HomeHeader from './view/HomeHeader';
 import style from './styling/Home.module.css';
+import AllCards from './view/AllCards';
 
 const Home = () => {
   const AllData = useSelector(({ countryReducer }) => countryReducer);
-  // console.log(AllData);
-  const region = ['Africa', 'Americas', 'Antarctic', 'Asia', 'Europe', 'Oceania'];
+  const regions = ['Africa', 'Americas', 'Antarctic', 'Asia', 'Europe', 'Oceania'];
 
   return (
     <div>
-      <Header />
+      <HomeHeader />
       <div className={style.allCards}>
-        {region.map((el, i) => (
+        {regions.map((el, i) => (
           <Card
             key={el}
             name={el.toLowerCase()}
@@ -26,6 +26,7 @@ const Home = () => {
                 return acc;
               }, 0)
             }
+            // onClick={() => <AllCards data={AllData.filter((item) => item.region == el)} />}
           />
         ))}
       </div>

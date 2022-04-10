@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  color: white;
   padding: 1rem 0;
 }
 .cardMap {
@@ -26,7 +25,6 @@
 svg {
   height: 8rem;
   width: 8rem;
-  /* fill: grey !important; */
 }
 path {
   fill: grey !important;
@@ -38,7 +36,6 @@ path {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  color: white;
   padding: 1rem 0;
 }
 .light {
@@ -46,4 +43,8 @@ path {
 }
 .dark {
   background-color: #ce4176;
+}
+
+.fullCard {
+  width: 100;
 }

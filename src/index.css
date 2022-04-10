@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   color: white;
+  background-color: #ec4c8a;
+  height: 100vh;
 }

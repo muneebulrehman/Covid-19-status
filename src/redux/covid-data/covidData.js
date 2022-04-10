@@ -3,9 +3,10 @@ const COUNTRY_DATA = 'covidStats/covid-data/COUNTRY_DATA';
 
 const url = 'https://api.covid19tracking.narrativa.com/api/';
 const date = new Date();
-const today = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(
-  date.getDate()
-).padStart(2, '0')}`;
+export const today = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+  2,
+  '0'
+)}-${String(date.getDate() - 1).padStart(2, '0')}`;
 
 const initialState = {
   allData: {},
