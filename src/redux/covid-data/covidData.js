@@ -2,6 +2,10 @@ const ALL_COVID_DATA = 'covidStats/covid-data/COVID_DATA';
 const COUNTRY_DATA = 'covidStats/covid-data/COUNTRY_DATA';
 
 const url = 'https://api.covid19tracking.narrativa.com/api/';
+const date = new Date();
+const today = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(
+  date.getDate()
+).padStart(2, '0')}`;
 
 const initialState = {
   allData: {},
@@ -22,17 +26,16 @@ const countryData = (payload) => {
   };
 };
 
-export const fetchCovidData = (payload) => async (dispatch) => {
-  const response = await fetch(`${url}/${payload.date}/country/c`);
+export const fetchCovidData = () => async (dispatch) => {
+  const response = await fetch(`${url}/${today}/country/c`);
   const data = await response.json();
   dispatch(covidData(data.total));
 };
 
 export const fetchCovidDataCountry = (payload) => async (dispatch) => {
-  const today = payload.date;
-  const response = await fetch(`${url}/${payload.date}/country/${payload.country}`);
+  const response = await fetch(`${url}/${today}/country/${payload}`);
   const data = await response.json();
-  dispatch(countryData(data.dates[today].countries[payload.country]));
+  dispatch(countryData(data.dates[today].countries[payload]));
 };
 
 const reducer = (state = initialState, action) => {
