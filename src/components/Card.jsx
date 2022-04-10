@@ -1,7 +1,11 @@
 import React, { useRef } from 'react';
-import style from './styling/Card.module.css';
+import './styling/card.css';
 
-const Card = ({ name }) => {
+const Card = ({ name, homeCard, even, count }) => {
+  console.log(count);
+  name = name.toLowerCase();
+  if (name === 'americas') name = 'america';
+  if (name === 'antarctic') name = 'antarctica';
   const map = useRef('');
   const getMap = async () => {
     const response = await fetch(
@@ -12,9 +16,14 @@ const Card = ({ name }) => {
   };
   getMap();
   return (
-    <div>
-      <div ref={map} className={style.cardMap}></div>
-      <h2>This is card</h2>
+    <div className={`${homeCard ? 'homeCard' : 'card'} ${even ? 'dark' : 'light'}`}>
+      <div ref={map} className={'cardMap'}>
+        <span>No map data</span>
+      </div>
+      <div>
+        <h3>{name}</h3>
+        <p>{count && count} Countries</p>
+      </div>
     </div>
   );
 };

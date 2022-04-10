@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: white;
+  padding: 1rem 0;
+}
+.cardMap {
+  height: 8rem;
+  width: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 30%;
+  }
+}
+
+svg {
+  height: 8rem;
+  width: 8rem;
+  /* fill: grey !important; */
+}
+path {
+  fill: grey !important;
+}
+
+.homeCard {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: white;
+  padding: 1rem 0;
+}
+.light {
+  background-color: #fd5193;
+}
+.dark {
+  background-color: #ce4176;
+}
