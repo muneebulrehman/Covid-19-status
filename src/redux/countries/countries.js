@@ -14,7 +14,6 @@ const addCountries = (payload) => {
 export const fetchCountries = () => async (dispatch) => {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
   const neededData = data.map((el) => {
     return {
       name: el.name.common,
