@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon path {
+  fill: white !important;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Route, Router } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchCountries } from './redux/countries/countries';
 import { fetchCovidData } from './redux/covid-data/covidData';
 import Home from './components/Home';
-import Header from './components/Header';
+
+import AllCards from './components/view/region/RegionCards';
 
 const App = () => {
-  const [message, setMessage] = useState('Today Stats');
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCountries());
@@ -20,8 +20,10 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header message={message} />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path={`/:id`} element={<AllCards />} />
+        </Routes>
       </BrowserRouter>
     </>
   );
