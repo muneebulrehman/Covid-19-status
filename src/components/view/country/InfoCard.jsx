@@ -8,7 +8,7 @@ const InfoCard = ({ data, even }) => {
   console.log(key);
 
   return (
-    <div className={even ? style.even : style.odd}>
+    <div className={[even ? style.even : style.odd, style.card].join(' ')}>
       <h3>{key}</h3>
       <p>{value}</p>
     </div>

@@ -28,7 +28,7 @@ const CountryCard = () => {
     <>
       <Header message={data.name}></Header>
       <HeadCard name={data.code} homeCard={false} flag={data.flag} fName={data.name} />
-      <div>
+      <div className={style.allCards}>
         {arr.map((el, i) => (
           <InofCard data={el} key={useId()} even={i % 2 === 0 ? true : false} />
         ))}
