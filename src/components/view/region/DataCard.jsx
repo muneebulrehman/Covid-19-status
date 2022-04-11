@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import style from '../../styling/DataCard.module.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 const DataCard = ({ data }) => {
+  const navigate = useNavigate();
   const code = data.code.toLowerCase();
   const map = useRef();
   const getMap = async () => {
@@ -17,7 +19,11 @@ const DataCard = ({ data }) => {
   });
 
   return (
-    <div className={style.card}>
+    <div
+      className={style.card}
+      onClick={() =>
+        navigate(`/${data.region.toLowerCase()}/${data.name.toLowerCase()}`, { state: { data } })
+      }>
       <div ref={map}>
         <span>No map data</span>
       </div>
