@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styling/card.css';
-import AllCards from './view/region/RegionCards';
 
 const Card = ({ name, homeCard, even, allData }) => {
   const navigate = useNavigate();

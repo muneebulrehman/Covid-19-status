@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import style from '../styling/HeadCard.module.css';
 
-const HeadCard = ({ name, homeCard, count }) => {
+const HeadCard = ({ name, homeCard, count, flag, fName }) => {
   const word = homeCard ? 'BY' : 'OF';
   let newname = name.toLowerCase();
   if (newname === 'americas') newname = 'america';
@@ -21,11 +21,16 @@ const HeadCard = ({ name, homeCard, count }) => {
   return (
     <>
       <div className={style.card}>
+        {!homeCard && (
+          <div className={style.flag}>
+            <img src={flag} alt={`${name} flag`} />
+          </div>
+        )}
         <div ref={map} className={style.cardMap}>
           <span>No map data</span>
         </div>
         <div className={style.info}>
-          <h3>{name.toUpperCase()}</h3>
+          <h3>{homeCard ? name.toUpperCase() : fName.toUpperCase()}</h3>
           {homeCard && <p>{count} Countries</p>}
         </div>
       </div>

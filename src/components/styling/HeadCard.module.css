@@ -26,3 +26,7 @@
 .message h3 {
   word-spacing: 10px;
 }
+.flag img {
+  height: 4rem;
+  width: 6rem;
+}

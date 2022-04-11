@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { fetchCountries } from './redux/countries/countries';
 import { fetchCovidData } from './redux/covid-data/covidData';
 import Home from './components/Home';
+import CountryCard from './components/view/country/CountryCard';
 
 import AllCards from './components/view/region/RegionCards';
 
@@ -23,6 +24,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path={`/:id`} element={<AllCards />} />
+          <Route path={`/:id/:name`} element={<CountryCard />} />
         </Routes>
       </BrowserRouter>
     </>
