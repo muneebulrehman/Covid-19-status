@@ -5,6 +5,7 @@ import HeadCard from '../HeadCard';
 import Header from '../../Header';
 import { fetchCovidDataCountry } from '../../../redux/covid-data/covidData';
 import InofCard from './InfoCard';
+import style from '../../styling/CountryCard.module.css';
 
 const CountryCard = () => {
   const { state } = useLocation();

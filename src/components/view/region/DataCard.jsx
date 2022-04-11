@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import style from '../../styling/DataCard.module.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
-const DataCard = ({ data }) => {
+const DataCard = ({ data, classname }) => {
+  // console.log(classname);
   const navigate = useNavigate();
   const code = data.code.toLowerCase();
   const map = useRef();
@@ -20,7 +21,7 @@ const DataCard = ({ data }) => {
 
   return (
     <div
-      className={style.card}
+      className={[style.card, classname ? style.light : style.dark].join(' ')}
       onClick={() =>
         navigate(`/${data.region.toLowerCase()}/${data.name.toLowerCase()}`, { state: { data } })
       }>

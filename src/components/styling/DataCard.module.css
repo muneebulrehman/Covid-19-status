@@ -27,3 +27,10 @@
     width: 50%;
   }
 }
+
+.dark {
+  background-color: #ce4176;
+}
+.light {
+  background-color: #fd5193;
+}
