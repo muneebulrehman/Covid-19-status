@@ -8,7 +8,7 @@ const Card = ({ name, homeCard, even, count }) => {
   const map = useRef();
   const getMap = async () => {
     const response = await fetch(
-      `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${name}/vector.svg`
+      `https://raw.githubusercontent.com/muneebulrehman/worldMaps/main/maps/${name}/vector.svg`
     );
     const data = await response.text();
     map.current.innerHTML = data;
