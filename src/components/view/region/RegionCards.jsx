@@ -39,7 +39,12 @@ const AllCards = () => {
       <HeadCard name={name} count={count} homeCard={true} />
       <div className={style.allCards}>
         {allData.map((data, i) => (
-          <DataCard data={data} key={data.code} classname={setClass(i)} />
+          <DataCard
+            data={data}
+            key={data.code}
+            classnameBg={setClass(i)}
+            classnameSm={true ? i % 2 === 0 : false}
+          />
         ))}
       </div>
     </div>

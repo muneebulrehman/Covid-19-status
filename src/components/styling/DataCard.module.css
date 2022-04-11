@@ -22,15 +22,28 @@
   fill: white !important;
 }
 
+.lPink {
+  background-color: #fd5193;
+}
+.dPink {
+  background-color: #ce4176;
+}
+
 @media screen and (min-width: 768px) {
   .card {
     width: 50%;
   }
-}
+  .dark {
+    background-color: #ce4176;
+  }
 
-.dark {
-  background-color: #ce4176;
-}
-.light {
-  background-color: #fd5193;
+  .light {
+    background-color: #fd5193;
+  }
+  .lPink {
+    background-color: none;
+  }
+  .dPink {
+    background-color: none;
+  }
 }
