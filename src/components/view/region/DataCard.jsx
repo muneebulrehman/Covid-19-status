@@ -4,7 +4,6 @@ import style from '../../styling/DataCard.module.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 const DataCard = ({ data, classnameBg, classnameSm }) => {
-  // console.log(classname);
   const navigate = useNavigate();
   const code = data.code.toLowerCase();
   const map = useRef();

@@ -24,14 +24,18 @@ const CountryCard = () => {
     { 'Open Cases': covidData.today_open_cases },
     { 'Total Recovered Cases': covidData.today_recovered }
   ];
-  console.log(arr);
   return (
     <>
       <Header message={data.name}></Header>
       <HeadCard name={data.code} homeCard={false} flag={data.flag} fName={data.name} />
       <div className={style.allCards}>
         {arr.map((el, i) => (
-          <InofCard data={el} key={useId()} even={i % 2 === 0 ? true : false} />
+          <InofCard
+            data={el}
+            key={useId()}
+            even={i === 0 || i === 3 || i === 4 ? true : false}
+            smallSc={i % 2 === 0 ? true : false}
+          />
         ))}
       </div>
     </>
