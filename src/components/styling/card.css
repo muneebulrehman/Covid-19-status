@@ -5,21 +5,11 @@
   justify-content: center;
   gap: 3rem;
   padding: 1rem 0;
+  cursor: pointer;
 }
 .cardMap {
   height: 8rem;
   width: 8rem;
-}
-
-@media screen and (min-width: 768px) {
-  .card {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .card {
-    width: 30%;
-  }
 }
 
 svg {
@@ -31,12 +21,13 @@ path {
 }
 
 .homeCard {
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
   padding: 1rem 0;
+  cursor: pointer;
 }
 .light {
   background-color: #fd5193;
@@ -47,4 +38,21 @@ path {
 
 .fullCard {
   width: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+  .homeCard {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 30%;
+  }
+  .homeCard {
+    width: 33.33%;
+  }
 }

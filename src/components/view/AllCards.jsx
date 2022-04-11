@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card';
+import DataCard from './DataCard';
 
-const AllCards = () => {
+const AllCards = (name, data) => {
   return <div>AllCards</div>;
 };
 
