@@ -5,15 +5,19 @@ const InfoCard = ({ data, even, smallSc }) => {
   const key = Object.keys(data)[0];
   const value = Object.values(data)[0];
 
+  /* eslint-disable */
   return (
     <div
       className={[
         even ? style.even : style.odd,
         style.card,
         smallSc ? style.lPink : style.dPink
-      ].join(' ')}>
+      ].join(' ')}
+    >
       <h3>{key}</h3>
-      <p>{value}</p>
+      <p>
+        {value ? value : 'No data avaiable yet'}
+      </p>
     </div>
   );
 };
