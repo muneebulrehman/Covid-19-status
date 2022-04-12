@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the Home page Home page rendered correctly 1`] = `
+<div>
+  <div
+    className="fullSpinner"
+  >
+    <div
+      className="spinner"
+    >
+      <div
+        className="loader l1"
+      />
+      <div
+        className="loader l2"
+      />
+    </div>
+  </div>
+</div>
+`;

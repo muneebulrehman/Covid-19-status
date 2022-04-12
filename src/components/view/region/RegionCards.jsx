@@ -31,7 +31,6 @@ const AllCards = () => {
   };
   const data = useLocation();
   const { name, allData, count } = data.state;
-  // console.log(allData);
 
   return (
     <div className={style.mainCard}>
