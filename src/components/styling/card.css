@@ -28,6 +28,7 @@ path {
   gap: 3rem;
   padding: 1rem 0;
   cursor: pointer;
+  position: relative;
 }
 .light {
   background-color: #fd5193;
@@ -55,4 +56,15 @@ path {
   .homeCard {
     width: 33.33%;
   }
+}
+
+.arrow-right {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 1rem;
+  width: 1rem;
+}
+.arrow-right path {
+  fill: white !important;
 }

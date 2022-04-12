@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styling/card.css';
+import { BsArrowRightCircle } from 'react-icons/bs';
 
 const Card = ({ name, homeCard, even, allData }) => {
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ const Card = ({ name, homeCard, even, allData }) => {
         <h3>{name.toUpperCase()}</h3>
         {homeCard && <p>{count && count} Countries</p>}
       </div>
+      <BsArrowRightCircle className="arrow-right" />
     </div>
   );
 };
