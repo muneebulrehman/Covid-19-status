@@ -11,8 +11,10 @@ const CountryCard = () => {
   const { state } = useLocation();
   const dispatch = useDispatch();
   const { data } = state;
+  let { name } = data;
+  name = name.split(' ').join('').toLowerCase();
   useEffect(() => {
-    dispatch(fetchCovidDataCountry(data.name));
+    dispatch(fetchCovidDataCountry(name));
   }, []);
   const covidData = useSelector(({ covidReducer }) => covidReducer.country);
   const arr = [
@@ -23,9 +25,10 @@ const CountryCard = () => {
     { 'Open Cases': covidData.today_open_cases },
     { 'Total Recovered Cases': covidData.today_recovered }
   ];
+  /* eslint-disable */
   return (
     <>
-      <Header message={data.name}></Header>
+      <Header message={data.name} />
       <HeadCard name={data.code} homeCard={false} flag={data.flag} fName={data.name} />
       <div className={style.allCards}>
         {arr.map((el, i) => (

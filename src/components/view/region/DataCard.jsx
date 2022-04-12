@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import style from '../../styling/DataCard.module.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import style from '../../styling/DataCard.module.css';
 
 const DataCard = ({ data, classnameBg, classnameSm }) => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const DataCard = ({ data, classnameBg, classnameSm }) => {
   useEffect(() => {
     getMap();
   });
-
+  /* eslint-disable */
   return (
     <div
       className={[
@@ -26,7 +26,7 @@ const DataCard = ({ data, classnameBg, classnameSm }) => {
         classnameSm ? style.lPink : style.dPink
       ].join(' ')}
       onClick={() =>
-        navigate(`/${data.region.toLowerCase()}/${data.name.toLowerCase()}`, { state: { data } })
+        navigate(`/${data.region.toLowerCase()}/${data.name.split(" ").join("").toLowerCase()}`, { state: { data } })
       }>
       <div ref={map}>
         <span>No map data</span>
