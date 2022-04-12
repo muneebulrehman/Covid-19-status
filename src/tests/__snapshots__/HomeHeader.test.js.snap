@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the Home header Home header rendered correctly 1`] = `
+<div
+  className="homeHeader"
+>
+  <div
+    className="imgContainer"
+  >
+    <h3>
+      2022-04-12
+    </h3>
+    <p>
+      STATS
+    </p>
+  </div>
+  <div
+    className="headerInfo"
+  >
+    <h3
+      className="heading"
+    >
+      TOTAL STATS
+    </h3>
+    <div
+      className="headerData"
+    >
+      <p>
+        Total Confirmed 
+        <br />
+         
+      </p>
+      <p>
+        Total Deaths 
+        <br />
+         
+      </p>
+      <p>
+        Total cases for Today 
+        <br />
+         
+      </p>
+      <p>
+        Total deaths for Today 
+        <br />
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;

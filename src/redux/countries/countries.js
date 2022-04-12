@@ -4,7 +4,7 @@ const url = 'https://restcountries.com/v3.1/all';
 
 const initialState = [];
 
-const addCountries = (payload) => {
+export const addCountries = (payload) => {
   return {
     type: ADD_COUNTRIES,
     payload

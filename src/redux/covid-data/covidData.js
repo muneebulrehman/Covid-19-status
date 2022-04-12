@@ -1,4 +1,4 @@
-const ALL_COVID_DATA = 'covidStats/covid-data/COVID_DATA';
+export const ALL_COVID_DATA = 'covidStats/covid-data/COVID_DATA';
 const COUNTRY_DATA = 'covidStats/covid-data/COUNTRY_DATA';
 
 const url = 'https://api.covid19tracking.narrativa.com/api/';
@@ -13,7 +13,7 @@ const initialState = {
   country: {}
 };
 
-const covidData = (payload) => {
+export const covidData = (payload) => {
   return {
     type: ALL_COVID_DATA,
     payload

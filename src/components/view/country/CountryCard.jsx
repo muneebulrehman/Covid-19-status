@@ -15,7 +15,6 @@ const CountryCard = () => {
     dispatch(fetchCovidDataCountry(data.name));
   }, []);
   const covidData = useSelector(({ covidReducer }) => covidReducer.country);
-  // console.log(covidData);
   const arr = [
     { 'Total Cases Recorded': covidData.today_confirmed },
     { 'Total Deaths recorded': covidData.today_deaths },

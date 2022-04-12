@@ -23,6 +23,7 @@ const Card = ({ name, homeCard, even, allData }) => {
 
   return (
     <div
+      data-testid={newname}
       className={`${homeCard ? 'homeCard' : 'card'} ${homeCard && even ? 'dark' : 'light'}`}
       onClick={() => {
         navigate(`/${name}`, { state: { name, allData, count, newname } });
