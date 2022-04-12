@@ -3,9 +3,11 @@ import './styling/Loader.css';
 
 const Loader = () => {
   return (
-    <div className="spinner">
-      <div className="loader l1"></div>
-      <div className="loader l2"></div>
+    <div className="fullSpinner">
+      <div className="spinner">
+        <div className="loader l1"></div>
+        <div className="loader l2"></div>
+      </div>
     </div>
   );
 };

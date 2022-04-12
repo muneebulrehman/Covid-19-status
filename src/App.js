@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchCountries } from './redux/countries/countries';
@@ -8,10 +8,12 @@ import CountryCard from './components/view/country/CountryCard';
 import AllCards from './components/view/region/RegionCards';
 
 const App = () => {
+  const [loader, setLoader] = useState(true);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCountries());
     dispatch(fetchCovidData());
+    setLoader(false);
   }, []);
 
   return (
