@@ -7,6 +7,7 @@
   padding: 1rem 0;
   cursor: pointer;
 }
+
 .cardMap {
   height: 8rem;
   width: 8rem;
@@ -16,6 +17,7 @@ svg {
   height: 8rem;
   width: 8rem;
 }
+
 path {
   fill: grey !important;
 }
@@ -30,29 +32,34 @@ path {
   cursor: pointer;
   position: relative;
 }
+
 .light {
   background-color: #fd5193;
 }
+
 .dark {
   background-color: #ce4176;
 }
 
 .fullCard {
-  width: 100;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .card {
     width: 40%;
   }
+
   .homeCard {
     width: 50%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .card {
     width: 30%;
   }
+
   .homeCard {
     width: 33.33%;
   }
@@ -65,6 +72,7 @@ path {
   height: 1rem;
   width: 1rem;
 }
+
 .arrow-right path {
   fill: white !important;
 }

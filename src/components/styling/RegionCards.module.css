@@ -1,6 +1,6 @@
 .allCards {
   display: flex;
-  flex-direction: cloumn;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 

@@ -13,19 +13,15 @@ const initialState = {
   country: {}
 };
 
-export const covidData = (payload) => {
-  return {
-    type: ALL_COVID_DATA,
-    payload
-  };
-};
+export const covidData = (payload) => ({
+  type: ALL_COVID_DATA,
+  payload
+});
 
-const countryData = (payload) => {
-  return {
-    type: COUNTRY_DATA,
-    payload
-  };
-};
+const countryData = (payload) => ({
+  type: COUNTRY_DATA,
+  payload
+});
 
 export const fetchCovidData = () => async (dispatch) => {
   const response = await fetch(`${url}/${today}/country/c`);

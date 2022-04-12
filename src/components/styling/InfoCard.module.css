@@ -11,6 +11,7 @@
 .lPink {
   background-color: #fd5193;
 }
+
 .dPink {
   background-color: #ce4176;
 }
@@ -19,6 +20,7 @@
   .card {
     width: 50%;
   }
+
   .even {
     background-color: #fd5193;
   }
@@ -26,9 +28,11 @@
   .odd {
     background-color: #ce4176;
   }
+ /* stylelint-disable */
   .lPink {
     background-color: none;
   }
+
   .dPink {
     background-color: none;
   }

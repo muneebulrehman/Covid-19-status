@@ -7,6 +7,7 @@
   padding: 2rem;
   cursor: pointer;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -14,10 +15,12 @@
   justify-content: space-between;
   height: 100%;
 }
+
 .icon {
   height: 1.5rem;
   width: 1.5rem;
 }
+
 .icon path {
   fill: white !important;
 }
@@ -25,6 +28,7 @@
 .lPink {
   background-color: #fd5193;
 }
+
 .dPink {
   background-color: #ce4176;
 }
@@ -33,6 +37,7 @@
   .card {
     width: 50%;
   }
+
   .dark {
     background-color: #ce4176;
   }
@@ -40,9 +45,13 @@
   .light {
     background-color: #fd5193;
   }
+
+  /* stylelint-disable */
+
   .lPink {
     background-color: none;
   }
+
   .dPink {
     background-color: none;
   }
