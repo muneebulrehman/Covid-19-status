@@ -4,7 +4,7 @@ This web app gives you the data of Covid19 like total cases, total deaths, activ
 
 ### Live link
 
-- [@Link]()
+- [@Link](https://covid19status-stats.netlify.app/)
 
 - [@Link to demo](https://www.loom.com/share/4e11bd2e407740bfbabc8138b6ef4608)
 
