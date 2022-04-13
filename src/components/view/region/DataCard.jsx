@@ -26,7 +26,7 @@ const DataCard = ({ data, classnameBg, classnameSm }) => {
         classnameSm ? style.lPink : style.dPink
       ].join(' ')}
       onClick={() =>
-        navigate(`/${data.region.toLowerCase()}/${data.name.split(" ").join("").toLowerCase()}`, { state: { data } })
+        navigate(`/region/${data.region.toLowerCase()}/country/${data.name.split(" ").join("").toLowerCase()}`, { state: { data } })
       }>
       <div ref={map}>
         <span>No map data</span>

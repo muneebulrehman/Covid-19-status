@@ -68,3 +68,7 @@ Feel free to check the [issues page](https://github.com/muneebulrehman/Covid-19-
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgements
+ 
+ Thanks to [Nelson Sakwa](behance.net/sakwadesignstudio) from behance for providing the desing.

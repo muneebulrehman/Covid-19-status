@@ -28,7 +28,7 @@ const Card = ({
       data-testid={newname}
       className={`${homeCard ? 'homeCard' : 'card'} ${homeCard && even ? 'dark' : 'light'}`}
       onClick={() => {
-        navigate(`/${name}`, {
+        navigate(`/region/${name}`, {
           state: {
             name, allData, count, newname
           }
