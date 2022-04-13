@@ -19,16 +19,32 @@ const HomeHeader = () => {
           <h3 className={style.heading}>TOTAL STATS</h3>
           <div className={style.headerData}>
             <p>
-              Total Confirmed <br /> {data.today_confirmed}
+              Total Confirmed Cases
+              {' '}
+              <br />
+              {' '}
+              {data.today_confirmed}
             </p>
             <p>
-              Total Deaths <br /> {data.today_deaths}
+              Total Deaths
+              {' '}
+              <br />
+              {' '}
+              {data.today_deaths}
             </p>
             <p>
-              Total cases for Today <br /> {data.today_new_confirmed}
+              Total cases for Today
+              {' '}
+              <br />
+              {' '}
+              {data.today_new_confirmed}
             </p>
             <p>
-              Total deaths for Today <br /> {data.today_new_deaths}
+              Total deaths for Today
+              {' '}
+              <br />
+              {' '}
+              {data.today_new_deaths}
             </p>
           </div>
         </div>

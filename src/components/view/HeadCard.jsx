@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import style from '../styling/HeadCard.module.css';
 
-const HeadCard = ({ name, homeCard, count, flag, fName }) => {
+const HeadCard = ({
+  name, homeCard, count, flag, fName
+}) => {
   const word = homeCard ? 'BY' : 'OF';
   let newname = name.toLowerCase();
   if (newname === 'americas') newname = 'america';
@@ -31,11 +33,23 @@ const HeadCard = ({ name, homeCard, count, flag, fName }) => {
         </div>
         <div className={style.info}>
           <h3>{homeCard ? name.toUpperCase() : fName.toUpperCase()}</h3>
-          {homeCard && <p>{count} Countries</p>}
+          {homeCard && (
+          <p>
+            {count}
+            {' '}
+            Countries
+          </p>
+          )}
         </div>
       </div>
       <div className={style.message}>
-        <h3>STATS {word} COUNTRY</h3>
+        <h3>
+          STATS
+          {' '}
+          {word}
+          {' '}
+          COUNTRY
+        </h3>
       </div>
     </>
   );

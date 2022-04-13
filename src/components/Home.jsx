@@ -23,8 +23,8 @@ const Home = () => {
               <Card
                 key={el}
                 name={el.toLowerCase()}
-                homeCard={true}
-                even={i % 2 === 0 ? true : false}
+                homeCard
+                even={i % 2 === 0}
                 allData={AllData.length > 0 && AllData.filter((data) => data.region === el)}
               />
             ))}
