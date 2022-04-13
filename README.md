@@ -6,6 +6,8 @@ This web app gives you the data of Covid19 like total cases, total deaths, activ
 
 - [@Link]()
 
+- [@Link to demo](https://www.loom.com/share/4e11bd2e407740bfbabc8138b6ef4608)
+
 ![screenshot](./screenshot.gif)
 
 Additional description about the project and its features.
