@@ -1,0 +1,35 @@
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+}
+
+.info p {
+  font-size: 1.15rem;
+}
+
+.message {
+  background-color: #ce4176;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.message h3 {
+  word-spacing: 10px;
+}
+
+.flag img {
+  height: 4rem;
+  width: 6rem;
+}

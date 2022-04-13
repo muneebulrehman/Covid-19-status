@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.cardMap {
+  height: 8rem;
+  width: 8rem;
+}
+
+svg {
+  height: 8rem;
+  width: 8rem;
+}
+
+path {
+  fill: grey !important;
+}
+
+.homeCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.light {
+  background-color: #fd5193;
+}
+
+.dark {
+  background-color: #ce4176;
+}
+
+.fullCard {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+
+  .homeCard {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: 30%;
+  }
+
+  .homeCard {
+    width: 33.33%;
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 1rem;
+  width: 1rem;
+}
+
+.arrow-right path {
+  fill: white !important;
+}

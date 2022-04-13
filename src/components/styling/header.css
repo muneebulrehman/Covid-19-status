@@ -1,0 +1,19 @@
+.headBar {
+  background-color: #fd5193;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.back-arrow {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  cursor: pointer;
+}
+
+.back-arrow path {
+  fill: white !important;
+}
