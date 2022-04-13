@@ -11,8 +11,8 @@ const CountryCard = () => {
   const { state } = useLocation();
   const dispatch = useDispatch();
   const { data } = state;
-  let { name } = data;
-  name = name.split(' ').join('').toLowerCase();
+  const { name } = data;
+
   useEffect(() => {
     dispatch(fetchCovidDataCountry(name));
   }, []);
